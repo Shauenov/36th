@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Entry</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Enter your password</h2>
+    <div class="profile">
+      <img src="top G.jpg" alt="User Profile">
+      <div class="profile-info">
+        <p>Business Account</p>
+        <strong>Sarah Bills</strong>
+      </div>
+    </div>
+    <div class="password-container">
+      <input type="password" id="password" placeholder="Password">
+      <label class="show-password">
+        <input type="checkbox" onclick="this.previousElementSibling.type = this.checked ? 'text' : 'password'">
+        Show password
+      </label>
+    </div>
+    <div class="stay-signed-in">
+      <input type="checkbox" id="stay-signed-in">
+      <label for="stay-signed-in">Stay signed in</label>
+    </div>
+    <button class="button">Continue</button>
+    <a href="#" class="reset-password">Reset password</a>
+  </div>
+</body>
+</html>
